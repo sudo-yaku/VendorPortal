@@ -1,0 +1,93 @@
+export const updateAutoVpPermission = `mutation($UpdateInput:UpdateInput!) {
+    updateAutoVpPermission(input:$UpdateInput) {
+      updateAutoVpPermission
+    }
+  }`;
+export const getUserInfoForCompanies = `query($input:CompaniesVendorId!) {
+    getUserInfoForCompanies(input:$input){
+            result
+            {
+            VDR_UNQ_ID
+            USER_UUID
+            CONTACT_UNID
+            OPSTRACKER_USERID
+            VENDOR_ID
+            FIRST_NAME
+            LAST_NAME
+            EMAIL_ADDRESS
+            PHONE_NUMBER
+            VENDOR_ROLE
+            IS_ISSO_REG
+            ISSO_USERID
+            LAST_UPDATED_BY
+            LAST_UPDATED_DATE
+            MARKET
+            SUB_MARKET
+            FAVORITE_SUBMARKET
+            LAST_ACCESSED_SUBMARKET
+            IS_VENDOR_TRAINED
+            }
+}
+  }`;
+export const getAutoVpVendorData = `query($userId!){
+    getAutoVpVendorData(userId:$userId){
+        vendor_data{
+            "IS_VPAUTO_ENABLED",
+            "VDR_CMPNY_UNQ_ID",
+            "CMPNY_UUID",
+            "VENDOR_ID",
+            "VENDOR_NAME",
+            "VENDOR_CATEGORY",
+            "VENDOR_AREA",
+            "VENDOR_REGION",
+            "VENDOR_PEOPLESOFTID",
+            "VENDOR_SERVICE_EMAIL",
+            "VENDOR_CONTACT_INFO",
+            "VENDOR_ADDRESS",
+            "VENDOR_CITY",
+            "VENDOR_STATE",
+            "VENDOR_ZIPCODE",
+            "VENDOR_UUID",
+            "VENDOR_SPONSORID",
+            "VENDOR_SPONSER_EMAIL"
+        }
+    }
+}`
+export const getCompaniesInfoForAllVendors = `query{
+    getCompaniesInfoForAllVendors{
+        companyinfoforvendorDetails
+        {
+            VDR_CMPNY_UNQ_ID
+            CMPNY_UUID
+            VENDOR_ID
+            VENDOR_NAME
+            VENDOR_CATEGORY
+            VENDOR_AREA
+            VENDOR_REGION
+            VENDOR_PEOPLESOFTID
+            VENDOR_SERVICE_EMAIL
+            VENDOR_CONTACT_INFO
+            VENDOR_ADDRESS
+            VENDOR_CITY
+            VENDOR_STATE
+            VENDOR_ZIPCODE
+            VENDOR_UUID
+            VENDOR_SPONSORID
+            VENDOR_SPONSER_EMAIL
+            VENDOR_MDGID
+            IS_VENDOR_DISABLED
+            IS_VPAUTO_ENABLED
+            IS_PRICING_MATRIX
+            IS_GROUP_VISIBILITY
+            CREATED_BY
+            CREATED_DATE
+            LAST_UPDATED_BY
+            LAST_UPDATED_DATE
+        }
+        OSWVendors{
+            VENDOR_ID
+            MARKET
+            SUB_MARKET
+           }
+    }
+}`

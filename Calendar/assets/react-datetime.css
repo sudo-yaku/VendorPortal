@@ -1,0 +1,217 @@
+/*!
+ * https://github.com/YouCanBookMe/react-datetime
+ */
+
+ .rdt {
+  position: relative;
+}
+.rdtPicker {
+  display: none !important;
+  position: absolute !important;
+  padding: 4px !important;
+  margin-top: 1px !important;
+  z-index: 99999 !important ;
+  background: #fff !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  border: 1px solid #f9f9f9;
+}
+.rdtOpen .rdtPicker {
+  display: block;
+}
+.rdtStatic .rdtPicker {
+  box-shadow: none;
+  position: static;
+}
+
+.rdtPicker .rdtTimeToggle {
+  text-align: center;
+}
+
+.rdtPicker table {
+  width: 100%;
+  margin: 0;
+}
+.rdtPicker td,
+.rdtPicker th {
+  text-align: center !important;
+  height: 25px !important;
+}
+.rdtPicker td {
+  cursor: pointer !important;
+}
+.rdtPicker td.rdtDay:hover,
+.rdtPicker td.rdtHour:hover,
+.rdtPicker td.rdtMinute:hover,
+.rdtPicker td.rdtSecond:hover,
+.rdtPicker .rdtTimeToggle:hover {
+  background: #eeeeee !important;
+  cursor: pointer !important;
+}
+.rdtPicker td.rdtOld,
+.rdtPicker td.rdtNew {
+  color: #999999 !important;
+}
+.rdtPicker td.rdtToday {
+  position: relative !important;
+}
+.rdtPicker td.rdtToday:before {
+  content: '' !important;
+  display: inline-block !important;
+  border-left: 7px solid transparent !important;
+  border-bottom: 7px solid #428bca !important;
+  border-top-color: rgba(0, 0, 0, 0.2) !important;
+  position: absolute !important;
+  bottom: 4px !important;
+  right: 4px !important;
+}
+.rdtPicker td.rdtActive,
+.rdtPicker td.rdtActive:hover {
+  background-color: #428bca !important;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+}
+.rdtPicker td.rdtActive.rdtToday:before {
+  border-bottom-color: #fff !important;
+}
+.rdtPicker td.rdtDisabled,
+.rdtPicker td.rdtDisabled:hover {
+  background: none !important;
+  color: #999999 !important;
+  cursor: not-allowed !important;
+}
+
+.rdtPicker td span.rdtOld {
+  color: #999999 !important;
+}
+.rdtPicker td span.rdtDisabled,
+.rdtPicker td span.rdtDisabled:hover {
+  background: none !important;
+  color: #999999 !important;
+  cursor: not-allowed !important; 
+}
+.rdtPicker th {
+  border-bottom: 1px solid #f9f9f9 !important;
+}
+.rdtPicker .dow {
+  width: 14.2857% !important;
+  border-bottom: none !important;
+  cursor: default !important;
+}
+.rdtPicker th.rdtSwitch {
+  width: 100px !important;
+}
+.rdtPicker th.rdtNext,
+.rdtPicker th.rdtPrev {
+  font-size: 17px !important;
+  vertical-align: top !important;
+}
+
+.rdtPrev span,
+.rdtNext span {
+  display: block !important;
+  -webkit-touch-callout: none !important; /* iOS Safari */
+  -webkit-user-select: none !important;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none !important;    /* Konqueror */
+  -moz-user-select: none !important;      /* Firefox */
+  -ms-user-select: none !important;       /* Internet Explorer/Edge */
+  user-select: none !important;
+}
+
+.rdtPicker th.rdtDisabled,
+.rdtPicker th.rdtDisabled:hover {
+  background: none !important;
+  color: #999999 !important;
+  cursor: not-allowed !important;
+}
+.rdtPicker thead tr:first-child th {
+  cursor: pointer !important;
+}
+.rdtPicker thead tr:first-child th:hover {
+  background: #eeeeee !important;
+}
+
+.rdtPicker tfoot {
+  border-top: 1px solid #f9f9f9 !important;
+}
+
+.rdtPicker button {
+  border: none !important;
+  background: none !important;
+  cursor: pointer !important;
+}
+.rdtPicker button:hover {
+  background-color: #eee !important;
+}
+
+.rdtPicker thead button {
+  width: 100% !important;
+  height: 100% !important; 
+}
+
+td.rdtMonth,
+td.rdtYear {
+  height: 48px !important;
+  width: 25% !important;
+  cursor: pointer !important;
+}
+td.rdtMonth:hover,
+td.rdtYear:hover {
+  background: #eee !important;
+}
+
+.rdtCounters {
+  display: inline-block !important;
+}
+
+.rdtCounters > div {
+  float: left !important;
+}
+
+.rdtCounter {
+  height: 90px !important;
+}
+
+.rdtCounter {
+  width: 95px !important;
+}
+
+.rdtCounterSeparator {
+  line-height: 95px !important;
+}
+
+.rdtCounter .rdtBtn {
+  height: 40% !important;
+  line-height: 40px !important;
+  cursor: pointer !important;
+  display: block !important;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none !important;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+.rdtCounter .rdtBtn:hover {
+  background: #eee !important;
+}
+.rdtCounter .rdtCount {
+  height: 20% !important;
+  font-size: 1.0em !important;
+}
+
+.rdtMilli {
+  vertical-align: middle !important;
+  padding-left: 8px !important;
+  width: 48px !important;
+}
+
+.rdtMilli input {
+  width: 100% !important;
+  font-size: 1.0em !important;
+  margin-top: 37px !important;
+}
+
+.rdtTime td {
+  cursor: default !important;
+}

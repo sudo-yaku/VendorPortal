@@ -1,0 +1,20 @@
+div[target='_collapseV'] {
+    display: flex;
+    flex: 1;  
+    overflow: hidden;
+  
+    max-height: 0;
+    transition: max-height 1s ease-out;
+  }
+  
+  div[target='_collapseH'] {
+    overflow: hidden;
+  
+    max-width: 1000;    
+    transition: max-width 5s ease;
+  } 
+  
+  .transition{
+    /* opacity: 0; */
+    transition: opacity 1s ease-in-out;
+  }

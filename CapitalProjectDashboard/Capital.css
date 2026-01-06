@@ -1,0 +1,79 @@
+input::placeholder{
+    font-size: 14px;
+    font-style: normal;
+}
+.ag-theme-balham .ag-header-cell-label .ag-header-cell-text{
+    font-weight: lighter;
+    font-size: 14px;
+}
+.ag-theme-balham .ag-header{
+    background-color: #F7F8F8;
+}
+ .work-container{
+    width:500px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid #ccc;
+ }
+ .work-header{
+    background-color: #ececec;
+    padding: 0.5em;
+    font-weight: 700;
+    font-size: 1.2em;
+ }
+ .work-count{
+    font-size: 6em !important;
+    font-weight: 400;
+    line-height: 1.5;
+ }
+ .work_status{
+    display:flex;
+    border-top: 3px solid #ccc;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    /* height:130px; */
+    padding-top: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    }
+ .work-box{
+    flex:1;
+    padding: 10px;
+    border-right: 2px solid #ccc;
+ }
+ .work-box:last-child{
+    border-right: none;
+ }
+ .work-title{
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+ }
+ .work-value{
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.5;
+ }
+ .projunscheduled{
+    border-top: 5px solid #ff0000ee !important;
+    font-weight: 600;
+ }
+ .projscheduled{
+    border-top: 5px solid #EA7001 !important;
+    font-weight: 600;
+ }
+ .work-box:hover{
+    background-color: #CBCBCB;
+    cursor: pointer;
+ }
+ .work-count:hover{
+   background-color: #CBCBCB;
+   cursor: pointer;
+}
