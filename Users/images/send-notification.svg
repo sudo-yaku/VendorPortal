@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>send notification</title>
+    <g id="send-notification" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(3.000000, 24.000000)">
+            <path d="M21.9081121,0 L88.3629952,0 C90.3716575,6.7672167e-15 92,1.62834251 92,3.6370048 L92,48.3629952 C92,50.3716575 90.3716575,52 88.3629952,52 L21.9081121,52 C19.8994498,52 18.2711073,50.3716575 18.2711073,48.3629952 L18.2711073,3.6370048 C18.2711073,1.62834251 19.8994498,-5.19193144e-16 21.9081121,0 Z" id="Rectangle" stroke="#000000" stroke-width="3.409692"></path>
+            <polyline id="Path-3" stroke="#000000" stroke-width="2.51180644" stroke-linecap="round" stroke-linejoin="round" points="26.2647167 6.7826087 53.3499531 23.5811776 82.9072461 6.7826087"></polyline>
+            <rect id="Rectangle" fill="#000000" x="0" y="6.10434783" width="11.9056163" height="3.6173913" rx="1.80869565"></rect>
+            <rect id="Rectangle-Copy-2" fill="#000000" x="0" y="32.3304348" width="11.9056163" height="3.6173913" rx="1.80869565"></rect>
+            <rect id="Rectangle-Copy" fill="#000000" x="6.41071648" y="16.0521739" width="11.9056163" height="3.6173913" rx="1.80869565"></rect>
+            <rect id="Rectangle-Copy-3" fill="#000000" x="7.32653312" y="42.2782609" width="11.9056163" height="3.6173913" rx="1.80869565"></rect>
+        </g>
+    </g>
+</svg>

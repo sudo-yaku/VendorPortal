@@ -1,0 +1,104 @@
+.float-label .control {
+    float: left;
+    position: relative;
+    padding-top: 23px;
+    padding-bottom: 10px;
+    padding-left: 0.5%;
+}
+
+.float-label input,
+.float-label textarea,
+.float-label select {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    /*resize: none;*/
+}
+.float-label input + label,
+.float-label textarea + label,
+.float-label .Select + label,
+.float-label select + label {
+    position: absolute;
+    top: 10px;
+    transition: top 0.7s ease, opacity 0.7s ease;
+    opacity: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #cd040b;
+}
+.float-label input:valid + label,
+.float-label textarea:valid + label,
+.float-label select:valid + label,
+.float-label .has-value + label {
+    opacity: 1;
+    top: 3px;
+}
+.float-label input:focus + label,
+.float-label textarea:focus + label,
+.float-label select:focus + label,
+.float-label .has-value + label{
+    color: #cd040b;
+}
+
+.float-label > .control>.Select >.Select-control{
+    border: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius:0px;
+    box-shadow: 0 0 0;
+}
+
+.float-label > .control>.Select >.Select-menu-outer{
+    z-index: 4000;
+}
+
+
+.float-label > .control > .rdt > .form-control{
+    border-bottom : 1px solid #eceff1;
+}
+
+.float-label > .control > .bootstrap-typeahead{
+    border-bottom: 1px solid #CFD8DC;
+}
+.resendAct{
+        height: 25px;
+        width:100%;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 2px !important;
+        position: relative;
+        cursor: pointer; 
+        background-color: #1a73e8;
+        border: 1px solid #fff;
+        color: #fff;
+        width: inherit;
+        cursor: pointer;
+}
+
+.resendAct:hover {
+    transform: scale(1.05);
+  }
+  
+  .resendAct:active {
+    transform: translateY(2px);
+  }
+  
+
+/* .resendAct:hover{
+    border: 1px solid tomato;
+    color:#ccc;
+    background: rgb(188, 196, 86);
+  } */
+
+  input:focus {
+    outline:none;
+    box-shadow:none;
+}
+/* .picky .picky__input{
+    background-color: black !important;
+    border-radius: 0px !important;
+} */
+#picky__button__button {
+    background: white !important;
+    color: black !important;
+  }
