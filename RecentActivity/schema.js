@@ -1,0 +1,45 @@
+export const getRecentActivity = `query($userId: String!){
+  getRecentActivity(userId:$userId){
+      recent_activities {
+          SECTOR_REQ_UNQ_ID 
+          SECTOR_REQUEST_TYPE 
+          WORK_REQUEST_TYPE 
+          SITE_TYPE 
+          SITE_NAME
+          WORK_ORDER_ID 
+          WORK_TYPE 
+          WORK_INFO  
+          SITE_UNID 
+          SWITCH_UNID 
+          MARKET 
+          SUB_MARKET 
+          INCLUDE_WORK_INFO 
+          DESCRIPTION 
+          GC_TECH_ID 
+          GC_USER_ID 
+          VENDOR_NAME 
+          VENDOR_COMPANY 
+          VENDOR_PHONE 
+          VENDOR_EMAIL 
+          ENODEB_ID 
+          SECTOR 
+          CARRIER 
+          RADIO 
+          NOTIFY_ADDRESS 
+          LOCK_UNLOCK_REQUEST_ID 
+          REQUEST_STATUS 
+          REQUEST_COMMENTS 
+          REQUEST_SOURCE 
+          CREATED_DATE 
+          CREATED_BY 
+          LAST_UPDATED_BY 
+          LAST_UPDATE_DATE 
+          LAST_WORKED_BY 
+          NON_SERVICE_IMPACTING 
+          IS_AUTO 
+          IS_WORK_COMPLETE 
+          WORK_COMPLETE_NOTES
+          VENDOR_ID
+      }
+  }     
+}`
